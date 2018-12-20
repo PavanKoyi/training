@@ -1,0 +1,4 @@
+S.NO,RE.NO,Name,College,YOP,Address.
+1. 401,Janam,KITS,2018,Guntur.
+2. 402,Pavan,KITS,2018,PTpadu.
+3. 403',Hemanth,KITS,2018,Guntur.

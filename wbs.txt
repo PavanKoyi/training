@@ -1,0 +1,16 @@
+Understanding The problem: We have to create the database by observing the ER diagram given.
+
+Inferred Requirements:
+                      Table names, Column names in the tables and data types of the columns.
+
+Confirmation: So we have to design a database for University data by creating tables using SQL.
+
+System perspective : 
+EVENTS:
+1.Create Tables:
+         Jobs to be done:
+                         Create the tables by using CREATE command
+                         Creating the constraints.
+                         Identify the PRIMARY KEY and FOREIGN KEYs in the tables
+2.Insert data into tables:
+                         Insert the data into tables by using INSERT command.

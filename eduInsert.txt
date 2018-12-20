@@ -1,0 +1,224 @@
+INSERT INTO edu_university (univ_code,university_name)
+VALUES ('1215', 'JNTU-Kakinada'),
+       ('1269', 'AU-Visakha');
+       
+
+
+INSERT INTO edu_department (dept_code,dept_name,univ_code)
+VALUES ('JD1', 'ECE', '1215'),
+       ('JD2', 'CSE', '1215'),
+       ('JD3', 'EEE', '1215'),
+       ('JD4', 'MCE', '1215'),
+       ('JD5', 'CIV', '1215'),
+       ('JD6', 'AUT', '1215'),
+       ('AD1', 'ECE', '1269'),
+       ('AD2', 'CSE', '1269'),
+       ('AD3', 'EEE', '1269'),
+       ('AD4', 'MCE', '1269'),
+       ('AD5', 'CIV', '1269'),
+       ('AD6', 'AUT', '1269');
+
+SELECT dept_code,dept_name,univ_code 
+  FROM edu_department;    
+       
+INSERT INTO edu_department (dept_code,dept_name,univ_code)
+VALUES ('JD7','IT','1215'),
+       ('AD7','IT','1269');       
+
+      
+INSERT INTO edu_college (id,`code`,`name`,univ_code,city,state,year_opened)
+VALUES (01, 'C001', 'KITS','1215','Guntur','AndhraPradesh',2008),
+       (02, 'C002', 'VVIT','1215','Guntur','AndhraPradesh',2006),  
+       (03, 'C003', 'VIST','1215','Tenali','AndhraPradesh',1999), 
+       (04, 'C004', 'RVRJC','1215','Guntur','AndhraPradesh',1985), 
+       (05, 'C005', 'LIST','1269','Visakha','AndhraPradesh',2000),
+       (07, 'C007', 'AVANTHI-IT','1269','Vijayanagaram','AndhraPradesh',2005), 
+       (08, 'C008', 'LARAIST','1269','Elur','AndhraPradesh',2008),
+       (09, 'C009', 'St.JOSEPH','1269','Guntur','AndhraPradesh',2002),
+       (10, 'C010', 'MLRIT','1269','Hyderabad','Telangana',1995);
+         
+
+SELECT id,`code`,`name`,univ_code,city,state,year_opened 
+  FROM edu_college;
+
+INSERT INTO edu_college_department (cdept_id,udept_code,college_id)
+VALUES (101, 'JD1', 01),
+       (102, 'JD2', 01),
+       (103, 'JD7', 01),
+       (104, 'JD1', 02),
+       (105, 'JD2', 02),
+       (106, 'JD3', 02),
+       (107, 'JD1', 03),
+       (108, 'JD2', 03),
+       (109, 'JD2', 04),
+       (110, 'JD7', 04),
+       (111, 'JD1', 05),
+       (112, 'JD2', 05),
+       (113, 'JD3', 05),
+       (116, 'AD2', 07),
+       (117, 'AD5', 07),
+       (118, 'AD7', 07),
+       (119, 'AD1', 08),
+       (120, 'AD2', 08),
+       (123, 'AD1', 09),
+       (124, 'AD2', 09),
+       (125, 'AD3', 09),
+       (126, 'AD7', 09),
+       (127, 'AD2', 10),
+       (128, 'AD5', 10),
+       (129, 'AD7', 10);
+       
+SELECT cdept_id,udept_code,college_id 
+  FROM edu_college_department;
+  
+INSERT INTO edu_designation (id,`name`,rank)  
+VALUES (1001, 'Chairman','A'),
+       (1002, 'Principal','B'),
+       (1003, 'HOD','C'),
+       (1004, 'Professor','D'),
+       (1005, 'NonTech','E');
+       
+SELECT id,`name`,rank 
+  FROM edu_designation;  
+  
+  
+INSERT INTO edu_employee (id,`name`,dob,email,phone,college_id,cdept_id,desig_id)
+VALUES (1101, 'Subbarao.K', 19730920, 'subbarao@gmail.com', 9951713366,01,101,1001),
+       (1102, 'Babu.P', 19700515, 'babup@gmail.com', 9908978444, 01, 101, 1002),  
+       (1103, 'Aadinarayana.M', 19780525, 'aadi.m@gmail.com', 9912152136, 01, 103, 1003),
+       (1104, 'Sarath.M', 19850804, 'sarath@gmail.com', 9916015236, 01, 103, 1004),
+       (1105, 'Perumal.M', 19630920, 'perumal@gmail.com', 9912156845, 10, 127, 1001),
+       (1106, 'Srinivas.K', 19830920, 'srinivas@gmail.com', 9177852656, 10, 127, 1002), 
+       (1107, 'Sravani.L', 19730920, 'sravani.l@gmail.com', 8885670440, 10, 128, 1003),
+       (1108, 'Vasireddy.K', 19900920, 'vasireddy@gmail.com', 9160012456, 02, 104, 1001),
+       (1109, 'Venkatadri.K', 19650920, 'venkatardri@gmail.com', 9951713366, 02, 104, 1003),
+       (1110, 'Rangarao.R', 19630920, 'rangarao.r@gmail.com', 9951713366, 04, 110, 1003),
+       (1111, 'Prasanna.K', 19890920, 'prasanna@gmail.com', 9951713366, 08, 119, 1001),
+       (1112, 'Rattaiah.L', 19730920, 'rattaiah@gmail.com', 951713366, 08, 120, 1003), 
+       (1113, 'SaiKiran', 19950920, 'saikiran@gmail.com', 7674813745, 03, 107, 1002), 
+       (1114, 'Hemu', 19930920, 'hemu@gmail.com', 77939424555, 03, 107, 1003),
+       (1115, 'Anil', 19950920, 'anil@gmail.com', 8328023761, 03, 108, 1003);
+    
+    
+SELECT id,`name`,dob,email,phone,college_id,cdept_id,desig_id
+  FROM edu_employee;          
+  
+  
+INSERT INTO edu_syllabus (id,cdept_id,syllabus_code,syllabus_name)
+VALUES (1201, 101, 'SY1', 'Electronics'),
+       (1202, 102, 'SY2', 'Measurements'),
+       (1203, 103, 'SY3', 'Geometry'),
+       (1204, 104, 'SY4', 'Mathemnatics'),
+       (1205, 105, 'SY5', 'Chemistry'),
+       (1206, 106, 'SY6', 'Physics'),
+       (1207, 107, 'SY7', 'Drawing'),
+       (1208, 108, 'SY8', 'Dynamics'),
+       (1209, 109, 'SY9', 'Signals&Systems'),
+       (1210, 110, 'SY10', 'CircuitAnalysys'),
+       (1211, 111, 'SY11', 'PulseCircuits'),
+       (1212, 112, 'SY12', 'Communications'),
+       (1213, 113, 'SY13', 'Analog'),
+       (1214, 116, 'SY14', 'Digital'),
+       (1215, 117, 'SY15', 'MicroWaves'),
+       (1216, 118, 'SY16', 'Electromagnetics'),
+       (1217, 119, 'SY17', 'TransmissionLines'),
+       (1218, 120, 'SY18', 'VLSI'),
+       (1219, 123, 'SY19', 'TV Engineering'),
+       (1220, 124, 'SY20', 'STLD');
+  
+
+SELECT id,cdept_id,syllabus_code,syllabus_name 
+  FROM edu_syllabus;  
+  
+INSERT INTO edu_professor_syllabus (emp_id,syllabus_id,semester)
+VALUES (1101, 1201, 1),
+       (1102, 1202, 1),
+       (1103, 1203, 2),
+       (1104, 1204, 2),
+       (1105, 1205, 3),
+       (1106, 1206, 3),
+       (1107, 1207, 4),
+       (1108, 1208, 4),
+       (1109, 1209, 5),
+       (1110, 1210, 5),
+       (1111, 1211, 6),
+       (1112, 1212, 6),
+       (1113, 1213, 7),
+       (1114, 1214, 7),
+       (1115, 1215, 8);
+     
+  
+
+SELECT emp_id,syllabus_id,semester 
+  FROM edu_professor_syllabus ;
+  
+INSERT INTO edu_student (id,roll_number,dob,`name`,gender,email,phone,address,cdept_id,college_id) 
+VALUES (401, '14JR401', '1997-09-04', 'Pavan', 'M', 'koyipavanchowdary0904@gmail.com', 9160011324, 'Guntur-A.p', 101, 01),
+       (402, '14JR402', '1996-09-10', 'Hemanth', 'M', 'kumarkhemanth28@gmail.com', 7793942455, 'Guntur-A.p', 101, 01),
+       (403, '14JR403', '1998-08-01', 'Janam', 'M', 'saik61771@gmail.com', 7674813745, 'Guntur-A.p', 101, 01),
+       (404, '14JR404', '1998-10-30', 'Lakshmi', 'F', 'koya.lakshmiprasanna@gmail.com', 8639392642, 'Guntur-A.p', 101, 01),
+       (405, '14JR405', '1996-06-07', 'Chaki', 'M', 'chaki.kits@gmail.com', 8855446633, 'Guntur-A.p', 102, 01),
+       (406, '14JR406', '1995-05-04', 'Venki', 'M', 'venki@gmail.com', 9654256852, 'Guntur-A.p', 102, 01),
+       (407, '14JR407', '1996-09-19', 'jaya', 'F', 'jaya.kits@gmail.com', 8885642564, 'Guntur-A.p', 104, 02),
+       (408, '14JR408', '1997-09-04', 'Kumar', 'M', 'kumar@gmail.com', 8751452545, 'Guntur-A.p', 105, 02 ),
+       (409, '14JR409', '1997-09-04', 'Sravan', 'M', 'sravan@gmail.com', 6305241255, 'Guntur-A.p', 106, 02),
+       (410, '14JR410', '1997-09-04', 'Jay', 'M', 'jay@gmail.com', 9584521635, 'Guntur-A.p', 107, 03),
+       (411, '14JR411', '1997-09-04', 'Rahul', 'M', 'rahul@gmail.com', 9854612352, 'Guntur-A.p', 108, 03),
+       (412, '14JR412', '1997-09-04', 'Srinivas', 'M', 'srinivas@gmail.com', 8451256356, 'Guntur-A.p', 109, 04),
+       (413, '14JR412', '1997-09-04', 'Kalyan', 'M', 'kalyan@gmail.com', 8556356235, 'Guntur-A.p', 110, 04),
+       (414, '14JR414', '1997-09-04', 'Krishna', 'M', 'krishna@gmail.com', 8965256365, 'Guntur-A.p', 111, 05),
+       (415, '14JR415', '1997-09-04', 'Bhanu', 'M', 'bhanu@gmail.com', 8788524635, 'Guntur-A.p', 111, 05),
+       (416, '14JR416', '1997-09-04', 'Venu', 'M', 'venu@gmail.com', 9121512545, 'Guntur-A.p', 112, 05),
+       (417, '14JR417', '1997-09-04', 'Sai', 'M', 'sai@gmail.com', 8546253152, 'Guntur-A.p', 112, 05),
+       (418, '14JR418', '1997-09-04', 'Sai.k', 'M', 'sai.k@gmail.com', 8546352451, 'Guntur-A.p', 113, 05),
+       (419, '14JR419', '1997-09-04', 'Manikanta', 'M', 'manikanta@gmail.com', 7589456353, 'Guntur-A.p', 127, 10),
+       (420, '14JR420', '1997-09-04', 'Shanmukh', 'M', 'shanmukh@gmail.com', 8564525655, 'Guntur-A.p', 128, 10),
+       (421, '14JR421', '1997-09-04', 'Yashu', 'F', 'yashu@gmail.com', 8565356525, 'Guntur-A.p', 129, 10),
+       (422, '14JR422', '1998-05-09', 'Kaveri', 'F', 'kaveri@gmail.com',8564125654, 'Guntur-A.p', 123, 09),
+       (423, '14JR423', '1998-05-09', 'Sukumar', 'M', 'sukumar@gmail.com',9568656353, 'Guntur-A.p', 123, 09),
+       (424, '14JR424', '1998-05-09', 'Ramya', 'F', 'ramya@gmail.com',9586565632, 'Guntur-A.p', 124, 09),
+       (425, '14JR425', '1998-05-09', 'Kalpana', 'F', 'kalpana@gmail.com',9898989898, 'Guntur-A.p', 124, 09),
+       (426, '14JR426', '1998-05-09', 'Lakshmi', 'F', 'lakshmi@gmail.com',9032101245, 'Guntur-A.p', 125, 09),
+       (427, '14JR427', '1998-05-09', 'Anil', 'M', 'anil@gmail.com',8328023761, 'Guntur-A.p', 125, 09),
+       (428, '14JR428', '1998-05-09', 'Lohith', 'M', 'lohith@gmail.com',8016956456, 'Guntur-A.p', 119, 08),
+       (429, '14JR429', '1998-05-09', 'Vivek', 'M', 'vivek@gmail.com',8016956456, 'Bangalore-Karnatka', 119, 08),
+       (430, '14JR430', '1998-05-09', 'Sumanth', 'M', 'sumanth@gmail.com',4545454545, 'Vijayawada-A.p', 120, 08),
+       (431, '14JR431', '1998-05-09', 'Srikanth', 'M', 'srikanth@gmail.com',9595959595, 'Nallore-A.p', 120, 08);
+       
+
+SELECT id,roll_number,dob,`name`,gender,email,phone,address,cdept_id,college_id 
+  FROM edu_student; 
+  
+
+INSERT INTO edu_semester_fee (cdept_id,stud_id,semester,amount,paid_year,paid_status)
+VALUES (101, 401, 8, 875, 2018, 'paid'),
+       (101, 402, 8, 875, 2018, 'paid'),
+       (101, 403, 8, 875, 2018, 'paid'),
+       (101, 404, 8, 875, 2018, 'paid'),
+       (102, 405, 7, 875, 2018, 'paid'),
+       (102, 406, 7, 875, 2018, 'paid'),
+       (104, 407, 7, 875, 2018, 'paid'),
+       (105, 408, 6, 875, 2018, 'paid'),
+       (106, 409, 6, 875, 2018, 'paid'),
+       (107, 410, 6, 875, 2018, 'paid'),
+       (108, 411, 5, 875, 2018, 'paid'),
+       (109, 412, 5, 875, 2018, 'paid'),
+       (110, 413, 4, 875, 2018, 'paid'),
+       (111, 414, 4, 875, 2018, 'paid'),
+       (111, 415, 4, 875, 2018, 'paid'),
+       (112, 416, 3, 875, 2018, 'paid'),
+       (112, 417, 3, 875, 2018, 'paid'),
+       (113, 418, 3, 875, 2018, 'paid'),
+       (119, 428, 3, 875, 2018, 'paid'),
+       (119, 429, 3, 875, 2018, 'paid'),
+       (120, 430, 2, 875, 2018, 'paid'),
+       (120, 431, 2, 875, 2018, 'paid'),
+       (123, 422, 2, 875, 2018, 'paid'),
+       (123, 423, 2, 875, 2018, 'paid'),
+       (124, 424, 2, 875, 2018, 'paid'),
+       (124, 425, 8, 875, 2018, 'paid'),
+       (125, 426, 8, 875, 2018, 'notpaid'),
+       (125, 427, 8, 875, 2018, 'notpaid'),
+       (127, 419, 7, 875, 2018, 'notpaid'),
+       (128, 420, 5, 875, 2018, 'notpaid'),
+       (129, 421, 6, 875, 2018, 'notpaid'); 
