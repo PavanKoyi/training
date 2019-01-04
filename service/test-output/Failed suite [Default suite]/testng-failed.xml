@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
+  <test thread-count="5" name="Default test(failed)(failed)">
+    <classes>
+      <class name="com.objectfrontier.training.service.test.AddressServiceTest">
+        <methods>
+          <include name="init"/>
+          <include name="testRead_negative"/>
+          <include name="testRead_positive"/>
+          <include name="test_create_nagative"/>
+          <include name="testDelete_positive"/>
+          <include name="testCreate_positive"/>
+          <include name="release"/>
+          <include name="truncate"/>
+          <include name="testUpdtaeAddress_negative"/>
+          <include name="testUpdtae_positive"/>
+          <include name="testDelete_negative"/>
+          <include name="testSearch_positive"/>
+        </methods>
+      </class> <!-- com.objectfrontier.training.service.test.AddressServiceTest -->
+    </classes>
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->

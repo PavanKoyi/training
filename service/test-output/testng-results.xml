@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="7" total="27" passed="20">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="312" started-at="2018-11-21T11:12:19Z" finished-at="2018-11-21T11:12:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="312" started-at="2018-11-21T11:12:19Z" finished-at="2018-11-21T11:12:19Z">
+      <class name="com.objectfrontier.training.service.test.PersonServiceTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="init" is-config="true" duration-ms="15" started-at="2018-11-21T11:12:19Z" finished-at="2018-11-21T11:12:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="47" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Pavan, last_name=Kumar, email=pavan@gmail.com, birth_date=25-11-1997, created_date=null, address=Address [id=0, street=ChowdaryStreet, city=Guntur, postalCode=416067]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Pavan, last_name=Kumar, email=pavan@gmail.com, birth_date=25-11-1997, created_date=null, address=Address [id=0, street=ChowdaryStreet, city=Guntur, postalCode=416067]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="0" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Noelle, last_name=Kyndred, email=nkyndred1@yellowbook.com, birth_date=25-11-1998, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=225451]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Noelle, last_name=Kyndred, email=nkyndred1@yellowbook.com, birth_date=25-11-1998, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=225451]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="16" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Inga, last_name=Stuchburie, email=istuchburie2@usa.gov, birth_date=25-11-1999, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=212121]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Inga, last_name=Stuchburie, email=istuchburie2@usa.gov, birth_date=25-11-1999, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=212121]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="0" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Maryl, last_name=Sleath, email=msleath3@ucsd.edu, birth_date=25-11-2000, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=555555]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Maryl, last_name=Sleath, email=msleath3@ucsd.edu, birth_date=25-11-2000, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=555555]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="15" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Grace, last_name=Denis, email=gdenis4@craigslist.org, birth_date=25-11-2001, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=545454]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Grace, last_name=Denis, email=gdenis4@craigslist.org, birth_date=25-11-2001, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=545454]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="0" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Shani, last_name=Gage, email=sgage5@unesco.org, birth_date=25-11-2002, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=5442545]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Shani, last_name=Gage, email=sgage5@unesco.org, birth_date=25-11-2002, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=5442545]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="0" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Colas, last_name=MacDonell, email=cmacdonell6@digg.com, birth_date=25-11-2003, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=545454]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Colas, last_name=MacDonell, email=cmacdonell6@digg.com, birth_date=25-11-2003, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=545454]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="16" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Robenia, last_name=Keelan, email=rkeelan7@yandex.ru, birth_date=25-11-2004, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=301767]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Robenia, last_name=Keelan, email=rkeelan7@yandex.ru, birth_date=25-11-2004, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=301767]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="0" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Elvyn, last_name=Saye, email=esaye8@harvard.edu, birth_date=25-11-2005, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=215564]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Elvyn, last_name=Saye, email=esaye8@harvard.edu, birth_date=25-11-2005, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=215564]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="15" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Bunni, last_name=Lumbley, email=blumbley9@networkadvertising.org, birth_date=25-11-2006, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=545454]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Bunni, last_name=Lumbley, email=blumbley9@networkadvertising.org, birth_date=25-11-2006, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=545454]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="0" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Jacky, last_name=McGaffey, email=jmcgaffeya@usa.gov, birth_date=25-11-2007, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=121212]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Jacky, last_name=McGaffey, email=jmcgaffeya@usa.gov, birth_date=25-11-2007, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=121212]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="16" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Diena, last_name=Corn, email=dcornb@ebay.com, birth_date=25-11-2008, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=121545]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Diena, last_name=Corn, email=dcornb@ebay.com, birth_date=25-11-2008, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=121545]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="15" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Tobye, last_name=Cohn, email=tcohnd@youku.com, birth_date=25-11-2010, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=854656]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Tobye, last_name=Cohn, email=tcohnd@youku.com, birth_date=25-11-2010, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=854656]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="0" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Marjorie, last_name=Ruddock, email=mruddockc@1und1.de, birth_date=25-11-2009, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=325694]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Marjorie, last_name=Ruddock, email=mruddockc@1und1.de, birth_date=25-11-2009, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=325694]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="0" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Kathy, last_name=Vaskin, email=kvaskine@fotki.com, birth_date=25-11-2011, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=545487]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Kathy, last_name=Vaskin, email=kvaskine@fotki.com, birth_date=25-11-2011, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=545487]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="16" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Bertie, last_name=Dobrovsky, email=bdobrovskyf@tamu.edu, birth_date=25-11-2012, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=4546465]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Bertie, last_name=Dobrovsky, email=bdobrovskyf@tamu.edu, birth_date=25-11-2012, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=4546465]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="16" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Crysta, last_name=Beernt, email=cbeerntg@hhs.gov, birth_date=25-11-2013, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=215454]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Crysta, last_name=Beernt, email=cbeerntg@hhs.gov, birth_date=25-11-2013, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=215454]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="0" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Paolo, last_name=Lythgoe, email=plythgoeh@jimdo.com, birth_date=25-11-2014, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=515454]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Paolo, last_name=Lythgoe, email=plythgoeh@jimdo.com, birth_date=25-11-2014, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=515454]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="15" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Gannon, last_name=Haile, email=ghailei@miibeian.gov.cn, birth_date=25-11-2015, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=212152]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Gannon, last_name=Haile, email=ghailei@miibeian.gov.cn, birth_date=25-11-2015, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=212152]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="testCreate_positive(com.objectfrontier.training.service.pojo.Person, com.objectfrontier.training.service.pojo.Person)[pri:1, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="testCreate_positive" duration-ms="16" started-at="2018-11-21T11:12:19Z" data-provider="dpCreate_positive" finished-at="2018-11-21T11:12:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Person [id=0, first_name=Lyle, last_name=Harle, email=lharlej@godaddy.com, birth_date=25-11-2016, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=121512]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Person [id=0, first_name=Lyle, last_name=Harle, email=lharlej@godaddy.com, birth_date=25-11-2016, created_date=null, address=Address [id=0, street=Street, city=City, postalCode=121512]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate_positive -->
+        <test-method status="PASS" signature="release()[pri:0, instance:com.objectfrontier.training.service.test.PersonServiceTest@71318ec4]" name="release" is-config="true" duration-ms="0" started-at="2018-11-21T11:12:19Z" finished-at="2018-11-21T11:12:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- release -->
+      </class> <!-- com.objectfrontier.training.service.test.PersonServiceTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

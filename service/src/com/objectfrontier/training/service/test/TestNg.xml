@@ -1,0 +1,8 @@
+<suite name="Test-class Suite" parallel="classes" thread-count="2" >
+  <test name="Test-class test" >
+    <classes>
+      <class name="com.objectfrontier.training.service.test.AddressServiceTest" />
+      <class name="com.objectfrontier.training.service.test.PersonServiceTest" />
+    </classes>
+  </test>
+</suite>
